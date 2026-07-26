@@ -6,8 +6,8 @@ Find these rare items:
 - Unarmed Strike upgraded: **1d4 → 2d4**
 - If a target is Knocked Prone, gain a bonus Unarmed Strike against an enemy within 5 ft.
 
-### 🧞🫙 Deja Vu Vuja De Djinn Jutsu
-- Main Action
+### 🧞🫙 Deja Vu Vuja De {item}
+- Main Action — Djinn Jutsu
 - Party Buff
 - Enemies within a 60 ft. radius are stunned for 1 turn.
 
@@ -19,4 +19,4 @@ Find these rare items:
 
 ## Discord TTRPG
 
-Post a screenshot of the redeemed item in the Discord to use — or bargain with — in the Discord TTRPG.
+Post a screenshot of the redeemed item in the Discord to use — or bargain with — in the Discord TTRPG!
