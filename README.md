@@ -1,7 +1,5 @@
 # 🏮 Bazaar
 
-## Grind 4 Gear
-
 Find these rare items:
 
 ### 🏆🥊 Roly Poly
