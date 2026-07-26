@@ -19,4 +19,4 @@ Find these rare items:
 
 ## Discord TTRPG
 
-Post a screenshot of the redeemed item in the Discord to use — or bargain with — in the Discord TTRPG!
+Post a screenshot of the redeemed item in the District 13 Discord Server to use — or bargain with — in the Shadowlands TTRPG!
