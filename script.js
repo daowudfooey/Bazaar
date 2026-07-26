@@ -1128,73 +1128,76 @@ function handleSummaryInput(key) {
 
 
 // =========================================================
+// INPUT ROUTER
+// =========================================================
+
+function processInput(key) {
+  if (currentView === "bazaar") {
+    handleBazaarInput(key);
+  }
+
+  else if (currentView === "shop") {
+    handleShopInput(key);
+  }
+
+  else if (currentView === "purchase") {
+    handlePurchaseInput(key);
+  }
+
+  else if (currentView === "identifier") {
+    handleIdentifierInput(key);
+  }
+
+  else if (currentView === "identifyPrompt") {
+    handleIdentifyPromptInput(key);
+  }
+
+  else if (currentView === "message") {
+    handleMessageInput(key);
+  }
+
+  else if (currentView === "identifiedItem") {
+    handleIdentifiedItemInput(key);
+  }
+
+  else if (currentView === "summary") {
+    handleSummaryInput(key);
+  }
+}
+
+
+// =========================================================
 // KEYBOARD CONTROLS
 // =========================================================
 
-document.addEventListener(
-  "keydown",
-  (event) => {
-    const key = (
-      event.key.toLowerCase()
-    );
+document.addEventListener("keydown", (event) => {
+  const key = event.key.toLowerCase();
 
-    const blockedKeys = [
+  if (
+    [
       "arrowup",
       "arrowdown",
       "enter",
       " ",
       "escape",
-    ];
-
-    if (blockedKeys.includes(key)) {
-      event.preventDefault();
-    }
-
-    if (currentView === "bazaar") {
-      handleBazaarInput(key);
-    }
-
-    else if (currentView === "shop") {
-      handleShopInput(key);
-    }
-
-    else if (
-      currentView === "purchase"
-    ) {
-      handlePurchaseInput(key);
-    }
-
-    else if (
-      currentView === "identifier"
-    ) {
-      handleIdentifierInput(key);
-    }
-
-    else if (
-      currentView === "identifyPrompt"
-    ) {
-      handleIdentifyPromptInput(key);
-    }
-
-    else if (
-      currentView === "message"
-    ) {
-      handleMessageInput(key);
-    }
-
-    else if (
-      currentView === "identifiedItem"
-    ) {
-      handleIdentifiedItemInput(key);
-    }
-
-    else if (
-      currentView === "summary"
-    ) {
-      handleSummaryInput(key);
-    }
+    ].includes(key)
+  ) {
+    event.preventDefault();
   }
-);
+
+  processInput(key);
+});
+
+
+// =========================================================
+// TOUCH CONTROLS
+// =========================================================
+
+document.querySelectorAll("[data-key]").forEach((button) => {
+  button.addEventListener("click", () => {
+    processInput(button.dataset.key);
+  });
+});
 
 
 // =========================================================

@@ -1,0 +1,91 @@
+:root {
+  color-scheme: dark;
+  font-family: "Courier New", Courier, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, #261c11 0%, #100c08 52%, #050403 100%);
+  color: #f3e7ca;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.terminal {
+  width: min(920px, 100%);
+  min-height: 640px;
+  padding: 28px;
+  border: 2px solid #a67c38;
+  border-radius: 6px;
+  background: rgba(7, 6, 4, 0.96);
+  box-shadow:
+    0 0 0 4px rgba(166, 124, 56, 0.12),
+    0 18px 55px rgba(0, 0, 0, 0.55);
+  overflow-x: auto;
+}
+
+#screen {
+  margin: 0;
+  min-height: 580px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font: inherit;
+  line-height: 1.55;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .terminal {
+    min-height: 92vh;
+    padding: 18px 14px;
+  }
+
+  #screen {
+    min-height: auto;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+}
+
+.mobile-controls {
+  display: none;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.mobile-controls button {
+  min-height: 50px;
+  padding: 8px 4px;
+  border: 1px solid #a67c38;
+  border-radius: 4px;
+  background: #171109;
+  color: #f3e7ca;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.mobile-controls button:active {
+  background: #332510;
+  transform: translateY(1px);
+}
+
+@media (max-width: 700px), (pointer: coarse) {
+  .mobile-controls {
+    display: grid;
+    position: sticky;
+    bottom: 8px;
+  }
+}
