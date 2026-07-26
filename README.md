@@ -6,12 +6,12 @@ Find these rare items:
 - Unarmed Strike upgraded: **1d4 → 2d4**
 - If a target is Knocked Prone, gain a bonus Unarmed Strike against an enemy within 5 ft.
 
-### 🧞 Deja Vu Vuja De Djinn Jutsu
+### 🧞🫙 Deja Vu Vuja De Djinn Jutsu
 - Main Action
 - Party Buff
 - Enemies within a 60 ft. radius are stunned for 1 turn.
 
-### 🐉 Lucky Dragon Coin
+### 🪙🐉 Lucky Dragon Coin
 - +1 to all saving throws
 - +1 to all ability checks
 
